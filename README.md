@@ -12,9 +12,9 @@ OSECOND_STRING constants in SwissData.java.
 
 The module exports all public classes and methods of Thomas Macks Java port - it is defined by:
 
-module swisseph {
-	exports swisseph;
-}
+    module swisseph {
+        exports swisseph;
+    }
 
 The file create-jar.txt is a list of Windows/Unix commands to create a swisseph.jar Java Module File with
 embedded Java Source and to create a Java Doc folder.
