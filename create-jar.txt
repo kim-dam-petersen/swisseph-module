@@ -1,0 +1,15 @@
+: Windows/Unix Java commands to create JAR Module with embedded Java Source.
+
+echo "Compile Java Source"
+del /s /q out
+javac -d out -g -Xlint:deprecation --module swisseph --module-source-path src/main/java
+
+echo "Generate Java Doc"
+javadoc -html5 -Xdoclint:none --source-path src/main/java/swisseph --module swisseph -d docs
+
+echo "Package Jar File"
+mkdir mods
+del mods/swisseph.jar
+jar --create --file mods/swisseph.jar -C out/swisseph/ . -C src/main/java/swisseph .
+
+echo "Java Doc and Jar Created"

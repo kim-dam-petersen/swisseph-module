@@ -1,0 +1,3 @@
+module swisseph {
+	exports swisseph;
+}

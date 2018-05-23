@@ -7,6 +7,8 @@ The Java Source was generated from Thomas Mack Java port with the command:
 
 The Java Source has slightly modified, see Change Log below, to remove deprecated features and to use
 preferred types in public methods.
+The Java Source files are encoded by UTF-8, this is only relevant for ODEGREE_-, OMINUTE_-, and
+OSECOND_STRING constants in SwissData.java. 
 
 The module exports all public classes and methods of Thomas Macks Java port - it is defined by:
 
